@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin './hero.ts';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* --background: #1c1717; */
+  --background: #e5e5e5;
+  /* --foreground: #ffffff; */
+  --foreground: #0a192f;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Hide scrollbars for all browsers */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  background-color: var(--background);
+}
+
+body {
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "League Spartan", sans-serif;
+}
